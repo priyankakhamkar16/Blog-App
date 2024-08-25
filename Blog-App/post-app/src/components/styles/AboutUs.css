@@ -1,0 +1,48 @@
+/* src/components/styles/AboutUs.css */
+
+.about-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about-us-content {
+    max-width: 800px;
+  }
+  
+  .about-us-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .about-us-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-us-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .about-us-content h1 {
+      font-size: 2em;
+    }
+  
+    .about-us-content p {
+      font-size: 1em;
+    }
+  }
+  

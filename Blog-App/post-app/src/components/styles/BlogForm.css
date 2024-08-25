@@ -1,0 +1,98 @@
+/* src/components/styles/BlogForm.css */
+.blog-form {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+.blog-form h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.blog-form input,
+.blog-form textarea,
+.blog-form select {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    outline: none; /* Remove blue outline on focus */
+}
+
+/* Remove focus border on input elements */
+.blog-form input:focus,
+.blog-form textarea:focus,
+.blog-form select:focus {
+    border-color: #ff7e5f; /* Optional: Add a custom border color on focus */
+}
+
+.blog-form textarea {
+    height: 180px;
+    resize: vertical;
+}
+
+.blog-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #feb47b; /* Color matching the gradient */
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.blog-form button:hover {
+    background-color: #ff7e5f; /* Darker shade from gradient for hover */
+    transform: translateY(-2px);
+}
+
+/* Popup Message Styles */
+.popup-message {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 30px;
+    background-color: #ff7e5f;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    text-align: center;
+    z-index: 1000;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+/* Fade in/out animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -30%);
+    }
+    10%, 90% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -30%);
+    }
+}

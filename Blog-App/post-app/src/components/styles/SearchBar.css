@@ -1,0 +1,43 @@
+/* src/components/styles/Searchbar.css */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.search-bar input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    outline: none; /* Remove the default outline */
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #ddd; /* Keep border color the same on focus */
+    box-shadow: none; /* Remove default box-shadow */
+}
+
+.search-bar button {
+    width: 70px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #feb47b; /* Color matching the gradient */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-bar button:hover {
+    background-color: #ff7e5f; /* Darker shade from gradient for hover */
+    transform: translateY(-2px);
+}
